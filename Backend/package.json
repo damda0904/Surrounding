@@ -19,6 +19,7 @@
   },
   "homepage": "https://github.com/damda0904/Surrounding#readme",
   "dependencies": {
+<<<<<<< HEAD
     "bcrypt": "^5.0.1",
     "body-parser": "^1.19.0",
     "cors": "^2.8.5",
@@ -30,6 +31,12 @@
     "mongodb": "^3.6.6",
     "mongoose": "^5.13.7",
     "morgan": "^1.10.0",
+=======
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.13.7",
+>>>>>>> a249a459d0d5f56d2f780c6d3ff9cb85e60a767a
     "multer": "^1.4.3"
   },
   "devDependencies": {
