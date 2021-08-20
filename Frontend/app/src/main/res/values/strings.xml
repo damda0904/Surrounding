@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Surrounding</string>
+    <string name="ibtn_search">search</string>
+    <string name="ibtn_back">back</string>
 </resources>

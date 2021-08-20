@@ -12,13 +12,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <ImageButton
             android:id="@+id/back"
-            android:layout_marginTop="3dp"
-            android:layout_marginLeft="10dp"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24"/>
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="3dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:contentDescription="@string/ibtn_back"/> />
         <ImageView
             android:foregroundGravity="center"
             android:layout_width="match_parent"
@@ -82,11 +84,14 @@
             android:textColor="@color/black"
             android:hint="검색어를 입력하세요"
             android:textSize="25sp"/>
+
         <ImageButton
             android:id="@+id/search"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginRight="40dp"
-            android:src="@drawable/ic_baseline_search_24"/>
+            android:hint=""
+            android:src="@drawable/ic_baseline_search_24"
+            android:contentDescription="@string/ibtn_search"/> />
     </LinearLayout>
 </LinearLayout>
