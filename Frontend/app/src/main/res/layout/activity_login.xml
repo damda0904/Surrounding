@@ -9,9 +9,9 @@
     android:background="@color/white"
     >
     <ImageView
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="35dp"
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="50dp"
         android:src="@drawable/ic_baseline_favorite_24"/><!--logo-->
     <TextView
         android:layout_marginTop="50dp"
@@ -26,6 +26,7 @@
         android:textColor="@color/black"
         />
     <EditText
+        android:id="@+id/edit_phoneNumber"
         android:layout_marginTop="50dp"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
@@ -38,6 +39,7 @@
         android:textColor="@color/black"
         android:textSize="26sp"/>
     <Button
+        android:id="@+id/btn_login"
         android:layout_marginLeft="40dp"
         android:layout_marginRight="40dp"
         android:layout_width="match_parent"
