@@ -13,6 +13,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical">
         <ImageButton
+            android:id="@+id/back"
             android:layout_marginTop="3dp"
             android:layout_marginLeft="10dp"
             android:layout_width="50dp"
@@ -43,7 +44,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="닉네임"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         />
     <EditText
@@ -56,7 +57,7 @@
         android:textColorHint="#aaaaaa"
         android:backgroundTint = "#aaaaaa"
         android:textColor="@color/black"
-        android:textSize="30sp"/>
+        android:textSize="25sp"/>
     <TextView
         android:layout_marginLeft="40dp"
         android:layout_marginRight="15dp"
@@ -64,7 +65,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="관심있는 동네"
-        android:textSize="25sp"
+        android:textSize="20sp"
         android:textColor="@color/black"
         />
     <LinearLayout
@@ -80,10 +81,12 @@
             android:backgroundTint = "#aaaaaa"
             android:textColor="@color/black"
             android:hint="검색어를 입력하세요"
-            android:textSize="30sp"/>
-        <Button
+            android:textSize="25sp"/>
+        <ImageButton
+            android:id="@+id/search"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginRight="40dp"/>
+            android:layout_marginRight="40dp"
+            android:src="@drawable/ic_baseline_search_24"/>
     </LinearLayout>
 </LinearLayout>
