@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditInformActivity"
+    android:orientation="vertical"
+    android:background="@color/white">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="3dp"
+        android:paddingLeft="10dp">
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_arrow_back_ios_24"
+            android:contentDescription="@string/ibtn_back"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="정보수정"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="27dp"
+        android:paddingTop="10dp">
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="이름"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aaaaaa"
+            android:backgroundTint = "#aaaaaa"
+            android:textColor="@color/black"
+            android:hint="이름을 입력하세요"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="주소"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aaaaaa"
+            android:backgroundTint = "#aaaaaa"
+            android:textColor="@color/black"
+            android:hint="주소를 입력하세요"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="전화번호"
+            android:textSize="24sp"
+            android:textColor="@color/black"
+            />
+        <EditText
+            android:layout_marginBottom="10dp"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColorHint="#aaaaaa"
+            android:backgroundTint = "#aaaaaa"
+            android:textColor="@color/black"
+            android:hint="00-0000-0000"
+            android:textSize="24sp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="신고 및 삭제요청" 
+            android:textSize="19sp"
+            android:textColor="#ff8484"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+        <Button
+            android:layout_width="322dp"
+            android:layout_height="49dp"
+            android:text="제출하기"
+            android:textSize="19sp"
+            android:textColor="#ffffff"
+            android:backgroundTint="#ff8484"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="해당 정보는 바로 변경됩니다."
+            android:textSize="18sp"
+            android:textColor="#a7a7a7"/>
+    </LinearLayout>
+</LinearLayout>

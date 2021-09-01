@@ -10,9 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Surrounding">
         <activity
+            android:name=".EditInformActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
+        <activity
             android:name=".SignupActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.NoActionBar"/>
+            android:theme="@style/Theme.AppCompat.NoActionBar" />
         <activity
             android:name=".LoginActivity"
             android:exported="true"
