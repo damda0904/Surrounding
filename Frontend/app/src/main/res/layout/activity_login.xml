@@ -35,7 +35,7 @@
         android:layout_height="wrap_content"
         android:hint="010-0000-0000"
         android:textColorHint="#aaaaaa"
-        android:backgroundTint = "#aaaaaa"
+        android:backgroundint = "#aaaaaa"
         android:textColor="@color/black"
         android:textSize="26sp"/>
     <Button
