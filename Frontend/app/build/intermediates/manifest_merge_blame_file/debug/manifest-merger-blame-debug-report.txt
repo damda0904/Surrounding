@@ -1,0 +1,110 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.surrounding"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml
+10
+11    <application
+11-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:5:5-52:19
+12        android:allowBackup="true"
+12-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:6:9-35
+13        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+13-->[androidx.core:core:1.5.0] /Users/jaeeun/.gradle/caches/transforms-3/e759884e8e1539e68246ec4d8729cc98/transformed/core-1.5.0/AndroidManifest.xml:24:18-86
+14        android:debuggable="true"
+15        android:icon="@mipmap/ic_launcher"
+15-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:7:9-43
+16        android:label="@string/app_name"
+16-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:8:9-41
+17        android:roundIcon="@mipmap/ic_launcher_round"
+17-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:9:9-54
+18        android:supportsRtl="true"
+18-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:10:9-35
+19        android:theme="@style/Theme.AppCompat.NoActionBar" >
+19-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:11:9-59
+20        <activity
+20-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:12:9-14:39
+21            android:name="com.example.surrounding.Review_Form_Activity"
+21-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:13:13-49
+22            android:exported="true" />
+22-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:14:13-36
+23        <activity
+23-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:15:9-17:39
+24            android:name="com.example.surrounding.ReviewDetailActivity"
+24-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:16:13-49
+25            android:exported="true" />
+25-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:17:13-36
+26        <activity
+26-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:18:9-20:39
+27            android:name="com.example.surrounding.Infra_Form_Activity"
+27-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:19:13-48
+28            android:exported="true" />
+28-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:20:13-36
+29        <activity
+29-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:21:9-23:39
+30            android:name="com.example.surrounding.SearchListActivity"
+30-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:22:13-47
+31            android:exported="true" />
+31-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:23:13-36
+32        <activity
+32-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:24:9-26:39
+33            android:name="com.example.surrounding.ReviewListActivity"
+33-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:25:13-47
+34            android:exported="true" /> <!-- android:theme="@style/Theme.Surrounding" -->
+34-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:26:13-36
+35        <activity
+35-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:27:9-29:39
+36            android:name="com.example.surrounding.SearchActivity"
+36-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:28:13-43
+37            android:exported="true" />
+37-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:29:13-36
+38        <activity
+38-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:30:9-32:39
+39            android:name="com.example.surrounding.Detail_Inform_Activity"
+39-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:31:13-51
+40            android:exported="true" />
+40-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:32:13-36
+41        <activity
+41-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:33:9-35:39
+42            android:name="com.example.surrounding.EditInformActivity"
+42-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:34:13-47
+43            android:exported="true" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+43-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:35:13-36
+44        <activity
+44-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:36:9-38:39
+45            android:name="com.example.surrounding.SignupActivity"
+45-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:37:13-43
+46            android:exported="true" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+46-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:38:13-36
+47        <activity
+47-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:39:9-41:39
+48            android:name="com.example.surrounding.LoginActivity"
+48-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:40:13-42
+49            android:exported="true" /> <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+49-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:41:13-36
+50        <activity
+50-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:42:9-51:20
+51            android:name="com.example.surrounding.MainActivity"
+51-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:43:13-41
+52            android:exported="true" > <!-- no title bar -->
+52-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:44:13-36
+53            <!-- android:theme="@style/Theme.AppCompat.NoActionBar" -->
+54            <intent-filter>
+54-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:46:13-50:29
+55                <action android:name="android.intent.action.MAIN" />
+55-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:47:17-69
+55-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:47:25-66
+56
+57                <category android:name="android.intent.category.LAUNCHER" />
+57-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:49:17-77
+57-->/Users/jaeeun/AndroidStudioProjects/Surrounding/Frontend/app/src/main/AndroidManifest.xml:49:27-74
+58            </intent-filter>
+59        </activity>
+60    </application>
+61
+62</manifest>

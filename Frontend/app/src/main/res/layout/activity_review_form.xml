@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".Review_Form_Activity">
+
+    <!--bar-->
+    <include layout="@layout/toolbar_reviewform"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="1dp"
+        android:background="#AAAAAA"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!--address-->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="18dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="23dp"
+                    android:text="주소검색"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_marginLeft="10dp"
+                    android:tint="#AAAAAA"
+                    app:srcCompat="@drawable/ic_baseline_place_24" />
+            </LinearLayout>
+            <EditText
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="15dp"
+                android:padding="6dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#aaaaaa"
+                android:textColor="@color/black"
+                android:hint="주소 검색하기"
+                android:textSize="17dp"
+                android:background="@drawable/editbox_corner"/>
+            <EditText
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="#aaaaaa"
+                android:backgroundTint = "@color/black"
+                android:textColor="@color/black"
+                android:hint="세부주소"
+                android:textSize="17dp"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+
+            <!--picture-->
+            <Button
+                android:id="@+id/show_place_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="19dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/picturebox_border"
+                android:drawableLeft="@drawable/ic_baseline_image_24"
+                android:paddingLeft="50px"
+                android:paddingRight="50px"
+                android:text="사진 추가"
+                android:textColor="@color/black" />
+            <ImageView
+                android:id="@+id/review_img"
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                android:layout_marginLeft="19dp"
+                android:layout_marginTop="10dp"
+                <!--android:background="@drawable/square_background_border_black"-->
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_image_24"
+                android:tint="#000000" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+
+            <!--rating-->
+            <!--safety-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:text="안전성"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp"/>
+            <RatingBar
+                android:id="@+id/rating_safety_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:isIndicator="false"
+                android:progressBackgroundTint="#FF8484"
+                android:progressTint="#FF8484"
+                android:secondaryProgressTint="#FF8484"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="23dp"/>
+            <EditText
+                android:id="@+id/comment_safety_form"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/editbox_round"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textColor="@color/black"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+
+            <!--access-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:text="접근성"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp"/>
+            <RatingBar
+                android:id="@+id/rating_access_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:isIndicator="false"
+                android:progressBackgroundTint="#FF8484"
+                android:progressTint="#FF8484"
+                android:secondaryProgressTint="#FF8484"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="23dp"/>
+            <EditText
+                android:id="@+id/comment_access_form"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/editbox_round"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+
+            <!--condition-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:text="거주환경"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp"/>
+            <RatingBar
+                android:id="@+id/rating_condition_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:isIndicator="false"
+                android:progressBackgroundTint="#FF8484"
+                android:progressTint="#FF8484"
+                android:secondaryProgressTint="#FF8484"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="23dp"/>
+            <EditText
+                android:id="@+id/comment_condition_form"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/editbox_round"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+
+            <!--etc-->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:text="기타"
+                android:textColor="@color/black"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_marginTop="18dp"/>
+            <RatingBar
+                android:id="@+id/rating_etc_form"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:numStars="5"
+                android:rating="0"
+                android:stepSize="0.5"
+                style="?android:attr/ratingBarStyleIndicator"
+                android:isIndicator="false"
+                android:progressBackgroundTint="#FF8484"
+                android:progressTint="#FF8484"
+                android:secondaryProgressTint="#FF8484"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="23dp"/>
+            <EditText
+                android:id="@+id/comment_etc_form"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:background="@drawable/editbox_round"
+                android:layout_marginLeft="23dp"
+                android:layout_marginRight="23dp"
+                android:layout_marginTop="10dp"
+                android:padding="15dp"
+                android:textColor="@color/black"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+            <!--submit-->
+            <Button
+                android:id="@+id/reviewform_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="50dp"
+                android:paddingLeft="40dp"
+                android:paddingRight="40dp"
+                android:layout_gravity="center_horizontal"
+                android:backgroundTint="#FF8484"
+                android:text="완료" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

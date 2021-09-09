@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".ReviewDetailActivity">
+
+    <!--bar-->
+    <include layout="@layout/toolbar_default"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2px"
+        android:layout_marginTop="1dp"
+        android:background="#AAAAAA"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <!-- name, date -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="13dp">
+
+                <TextView
+                    android:id="@+id/nickname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:layout_marginStart="21dp"
+                    android:textColor="@color/black"
+                    android:textSize="15dp"
+                    android:text="nickname"/>
+
+                <TextView
+                    android:id="@+id/date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="1dp"
+                    android:text="2021.10.01"
+                    android:textColor="#AAAAAA"
+                    android:textSize="12dp" />
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <Button
+                    android:id="@+id/review_menu_btn"
+                    android:layout_width="34dp"
+                    android:layout_height="33dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/ic_baseline_more_horiz_24"
+                    android:backgroundTint="#AAAAAA" />
+            </LinearLayout>
+
+
+            <!-- address -->
+            <TextView
+                android:id="@+id/address"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="21dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="5dp"
+                android:text="서울특별시 어디구 어디동 어디아파트 101동 1101"
+                android:textColor="#E57373"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/show_place_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="32dp"
+                android:layout_marginStart="19dp"
+                android:background="@drawable/placebtn_border"
+                android:drawableLeft="@drawable/ic_baseline_place_24"
+                android:paddingLeft="60px"
+                android:paddingRight="60px"
+                android:text="위치보기"
+                android:textColor="#ffff" />
+
+            <!-- picture -->
+            <ImageView
+                android:id="@+id/review_img"
+                android:layout_width="300dp"
+                android:layout_height="300dp"
+                android:layout_gravity="center"
+                android:layout_margin="25dp"
+                <!-->ndroid:background="@drawable/square_background_border_black"-->
+                android:scaleType="centerCrop"
+                android:src="@drawable/ic_baseline_image_24"
+                android:tint="#000000" />
+
+            <!-- rating -->
+            <!--safety-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="23dp"
+                    android:text="안전성"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <RatingBar
+                    android:id="@+id/ratingBar_safety"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#DD8080"
+                    android:progressTint="#DD8080"
+                    android:secondaryProgressTint="#DD8080"
+                    android:rating="5" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/comment_safety"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="15dp"
+                android:text="관리실이 있어서 좋아요"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+
+            <!--access-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="23dp"
+                    android:text="접근성"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <RatingBar
+                    android:id="@+id/ratingBar_access"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#DD8080"
+                    android:progressTint="#DD8080"
+                    android:secondaryProgressTint="#DD8080"
+                    android:rating="4" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/comment_access"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="15dp"
+                android:text="지하철이랑 가까워요"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+
+            <!--condition-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="23dp"
+                    android:text="거주환경"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <RatingBar
+                    android:id="@+id/ratingBar_condition"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#DD8080"
+                    android:progressTint="#DD8080"
+                    android:secondaryProgressTint="#DD8080"
+                    android:rating="3.5" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/comment_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="15dp"
+                android:text="지어진지 오래되어서 쏘쏘"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+            <!--etc-->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="10dp">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="23dp"
+                    android:text="기타"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+                <RatingBar
+                    android:id="@+id/ratingBar_etc"
+                    style="@style/Widget.AppCompat.RatingBar.Indicator"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="22dp"
+                    android:isIndicator="true"
+                    android:numStars="5"
+                    android:progressBackgroundTint="#DD8080"
+                    android:progressTint="#DD8080"
+                    android:secondaryProgressTint="#DD8080"
+                    android:rating="3" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/comment_etc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="23dp"
+                android:layout_marginTop="15dp"
+                android:text="그럭저럭 ㄱㅊ"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="3px"
+                android:layout_marginTop="20dp"
+                android:background="#AAAAAA"/>
+
+
+
+
+            <!-- bottom icons -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="100dp">
+                <Button
+                    android:id="@+id/thumb_up"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="23dp"
+                    android:background="@drawable/thumb_up" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginLeft="10dp"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="1" />
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <Button
+                    android:id="@+id/bookmark"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="22dp"
+                    android:background="@drawable/bookmark"
+                    android:backgroundTint="#000000" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
