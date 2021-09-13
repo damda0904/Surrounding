@@ -8,25 +8,13 @@
     android:orientation="vertical"
     android:background="@color/white">
 
-    <LinearLayout
+    <!--bar-->
+    <include layout="@layout/toolbar_signup"/>
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <ImageView
-            android:id="@+id/back"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="10dp"
-            android:layout_marginTop="3dp"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24"
-            android:contentDescription="@string/ibtn_back"/>
-        <ImageView
-            android:foregroundGravity="center"
-            android:layout_width="match_parent"
-            android:layout_height="40dp"
-            android:src="@drawable/ic_baseline_favorite_24"/><!--logo-->
-    </LinearLayout>
+        android:layout_height="2px"
+        android:layout_marginTop="1dp"
+        android:background="#AAAAAA"/>
     <TextView
         android:layout_marginTop="30dp"
         android:layout_marginLeft="40dp"
@@ -88,11 +76,11 @@
 
         <ImageView
             android:id="@+id/search"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
             android:layout_marginRight="40dp"
-            android:hint=""
             android:src="@drawable/ic_baseline_search_24"
-            android:contentDescription="@string/ibtn_search"/> />
+            android:contentDescription="@string/ibtn_search"
+            android:tint="@color/black"/> />
     </LinearLayout>
 </LinearLayout>

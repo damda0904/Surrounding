@@ -6,39 +6,15 @@
     android:layout_height="match_parent"
     tools:context=".SearchActivity"
     android:orientation="vertical"
-    android:paddingTop="3dp">
-    <RelativeLayout
+    android:paddingTop="3dp"
+    android:background="@color/white">
+    <!--bar-->
+    <include layout="@layout/toolbar_search"/>
+    <View
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:paddingBottom="10dp"
-        android:elevation="10dp"
-        android:background="@color/white">
-        <ImageView
-            android:layout_marginLeft="21dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_arrow_back_ios_24"
-            android:layout_alignParentLeft="true"
-            android:layout_centerVertical="true"/>
-        <EditText
-            android:layout_marginBottom="10dp"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:textColorHint="#b1b1b1"
-            android:background="@android:color/transparent"
-            android:textColor="@color/black"
-            android:hint="검색"
-            android:textSize="20sp"
-            android:layout_centerInParent="true"/>
-        <ImageView
-            android:layout_marginRight="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_baseline_search_24"
-            android:layout_alignParentRight="true"
-            android:layout_centerVertical="true"/>
-    </RelativeLayout>
+        android:layout_height="2px"
+        android:layout_marginTop="1dp"
+        android:background="#AAAAAA"/>
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
