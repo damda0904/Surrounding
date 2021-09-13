@@ -10,6 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AppCompat.NoActionBar">
         <activity
+            android:name=".Review_Form_Activity"
+            android:exported="true" />
+        <activity
+            android:name=".ReviewDetailActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Infra_Form_Activity"
+            android:exported="true" />
+        <activity
             android:name=".SearchListActivity"
             android:exported="true" />
         <activity
